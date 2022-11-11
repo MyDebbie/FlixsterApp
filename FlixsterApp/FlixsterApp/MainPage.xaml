@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlixsterApp.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="FLIXSTER" HorizontalTextAlignment="Center" TextColor="Azure" FontSize="36"/>
+        </Frame>
+        <Image x:Name="pbImageFilm" HeightRequest="150" WidthRequest="150" Margin="0">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Never Die" FontSize="Title" x:Name="lbTitle" Padding="20,5,10,5" TextColor="Black"/>
+            <Button x:Name="btnInternet" BackgroundColor="#ffffff"  WidthRequest="50" Padding="100"
+                            HeightRequest="5" Grid.Column="1"
+                CornerRadius="50" />
+        </StackLayout>
+        
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" x:Name="lbOverview" FontSize="16" Padding="20,30,20,30" TextColor="Black"/>
+        <Grid>
+            <Button x:Name="btnPrevious" Text="Previous" BackgroundColor="#2196F3" TextColor="White" Clicked="btnPrevious_Click"></Button>
+            <Button x:Name="btnNext" Grid.Column="1" Text="Next" BackgroundColor="#2196F3" TextColor="White" Clicked="btnNext_Click"></Button>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

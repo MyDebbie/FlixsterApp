@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlixsterApp.Detail">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="FLIXSTER" HorizontalTextAlignment="Center" TextColor="Azure" FontSize="36"/>
+            </Frame>
+            <WebView x:Name="youtubeVideo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="280"
+                 Source=""></WebView>
+            <Label Text="Never Die" FontSize="Title" x:Name="lbTitle" Padding="20,0,20,0" TextColor="Black"/>
+
+            <Label Text="Never Die" FontSize="Title" x:Name="lbOriginalLanguange" Padding="10,0" TextColor="Black"/>
+            <Label Text="Never Die" FontSize="Title" x:Name="lbReleaseDate" Padding="10,0" TextColor="Black"/>
+            <Label Text="Never Die" FontSize="Title" x:Name="lbVoteAverage" Padding="10,0" TextColor="Black"/>
+            <Label Text="Never Die" FontSize="Title" x:Name="lbVoteCount" Padding="10,0" TextColor="Black"/>
+
+            <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" x:Name="lbOverview" FontSize="16" Padding="20,5,20,5" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
